@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<publishData>
+  <publishProfile publishUrl="U:\Deploy" deleteExistingFiles="False" ftpAnonymousLogin="False" ftpPassiveMode="True" msdeploySite="" msdeploySiteID="" msdeployRemoteSitePhysicalPath="" msdeployAllowUntrustedCertificate="False" msdeploySkipExtraFilesOnServer="True" msdeployMarkAsApp="False" profileName="PublishToZipProfile" publishMethod="FileSystem" replaceMatchingFiles="True" userName="" savePWD="False" userPWD="" SelectedForPublish="True">
+    <file relUrl="Web.config" publishTime="04/16/2013 21:15:33" />
+    <file relUrl="bin/StreamingApp.dll" publishTime="04/16/2013 21:15:31" />
+    <file relUrl="Site.Master" publishTime="04/16/2013 21:06:10" />
+    <file relUrl="Account/Web.config" publishTime="04/07/2013 20:41:37" />
+    <file relUrl="bin/MPStreamingInterface.pdb" publishTime="04/16/2013 21:13:13" />
+    <file relUrl="Account/Register.aspx" publishTime="04/07/2013 20:41:36" />
+    <file relUrl="Scripts/jquery-1.4.1.min.js" publishTime="04/07/2013 20:41:37" />
+    <file relUrl="Settings.aspx" publishTime="04/16/2013 18:45:08" />
+    <file relUrl="Account/ChangePasswordSuccess.aspx" publishTime="04/07/2013 20:41:36" />
+    <file relUrl="Account/Login.aspx" publishTime="04/07/2013 20:41:36" />
+    <file relUrl="Styles/Site.css" publishTime="04/08/2013 22:47:59" />
+    <file relUrl="Scripts/jquery-1.4.1.js" publishTime="04/07/2013 20:41:37" />
+    <file relUrl="Account/ChangePassword.aspx" publishTime="04/07/2013 20:41:36" />
+    <file relUrl="bin/StreamingApp.pdb" publishTime="04/16/2013 21:15:31" />
+    <file relUrl="Global.asax" publishTime="04/07/2013 20:41:37" />
+    <file relUrl="Default.aspx" publishTime="04/13/2013 21:36:33" />
+    <file relUrl="Error.aspx" publishTime="04/14/2013 17:25:02" />
+    <file relUrl="Scripts/jquery-1.4.1-vsdoc.js" publishTime="04/07/2013 20:41:37" />
+    <file relUrl="Channels.aspx" publishTime="04/14/2013 19:07:17" />
+    <file relUrl="bin/MPStreamingInterface.dll" publishTime="04/16/2013 21:13:13" />
+  </publishProfile>
+</publishData>

@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/Termors.Services.Tv.MPStreamingInterface" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/Termors.Services.Tv.MPStreamingInterface" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+  <xs:complexType name="ChannelList">
+    <xs:sequence>
+      <xs:element xmlns:q1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="ChannelGroups" nillable="true" type="q1:ArrayOfstring" />
+      <xs:element minOccurs="0" name="Channels" nillable="true" type="tns:ArrayOfChannel" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ChannelList" nillable="true" type="tns:ChannelList" />
+  <xs:complexType name="ArrayOfChannel">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Channel" nillable="true" type="tns:Channel" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfChannel" nillable="true" type="tns:ArrayOfChannel" />
+  <xs:complexType name="Channel">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ChannelGroup" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ChannelId" type="xs:int" />
+      <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Channel" nillable="true" type="tns:Channel" />
+  <xs:complexType name="StreamingFault">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Error" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="StreamingFault" nillable="true" type="tns:StreamingFault" />
+  <xs:complexType name="StreamingResult">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="m_channel" nillable="true" type="tns:Channel" />
+      <xs:element minOccurs="0" name="m_sLocalUrl" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="m_sRecordingUrl" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="m_sRemoteUrl" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="StreamingResult" nillable="true" type="tns:StreamingResult" />
+  <xs:complexType name="ArrayOfStreamingResult">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="StreamingResult" nillable="true" type="tns:StreamingResult" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfStreamingResult" nillable="true" type="tns:ArrayOfStreamingResult" />
+  <xs:complexType name="StreamingSettings">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="m_audioBitrate" type="xs:unsignedShort" />
+      <xs:element minOccurs="0" name="m_ftpConcurrentJobs" type="xs:unsignedShort" />
+      <xs:element minOccurs="0" name="m_maxVideoBitrate" type="xs:unsignedShort" />
+      <xs:element minOccurs="0" name="m_segmentCount" type="xs:unsignedShort" />
+      <xs:element minOccurs="0" name="m_segmentLength" type="xs:unsignedShort" />
+      <xs:element minOccurs="0" name="m_videoBitrate" type="xs:unsignedShort" />
+      <xs:element minOccurs="0" name="m_videoSize" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="StreamingSettings" nillable="true" type="tns:StreamingSettings" />
+</xs:schema>

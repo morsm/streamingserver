@@ -1,0 +1,87 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="Termors.Services.Tv.MPStreamingService" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="TvServerHost" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">giulia3.termors.net</Value>
+    </Setting>
+    <Setting Name="DebugInterruptTcpPort" Type="System.Int32" Scope="Application">
+      <Value Profile="(Default)">52000</Value>
+    </Setting>
+    <Setting Name="TwitterEnabled" Type="System.Boolean" Scope="Application">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="OutputDirectory" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">W:\Streaming</Value>
+    </Setting>
+    <Setting Name="BaseFileName" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">stream</Value>
+    </Setting>
+    <Setting Name="FFMpegCommandLine" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">-i {0} -map 0:{2} -filter:v yadif -vcodec libx264 -preset veryfast -profile:v baseline -level 30 -maxrate {9}k -bufsize 10000000 -b:v {4}k -s {6} -threads 0 -f segment -segment_list {1}.m3u8 -segment_list_flags +live -segment_time {7} -segment_wrap {8} -bsf h264_mp4toannexb -flags -global_header -map 0:{3} -acodec aac -ac 2 -strict experimental -b:a {5}k {1}%03d.ts</Value>
+    </Setting>
+    <Setting Name="FFMpegPath" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">D:\Temp\ffmpeg\bin\ffmpeg.exe</Value>
+    </Setting>
+    <Setting Name="LocalStreamingUrl" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">http://www.termors.net/streaming/stream.m3u8</Value>
+    </Setting>
+    <Setting Name="FFProbePath" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">D:\Temp\ffmpeg\bin\ffprobe.exe</Value>
+    </Setting>
+    <Setting Name="FFProbeCommandLine" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">-i {0} -show_streams -v quiet -print_format xml</Value>
+    </Setting>
+    <Setting Name="FtpHost" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">termorslive.net16.net</Value>
+    </Setting>
+    <Setting Name="FtpUser" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">a5847925</Value>
+    </Setting>
+    <Setting Name="FtpPassword" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">yoghurt19</Value>
+    </Setting>
+    <Setting Name="FtpRemoteDir" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">/public_html/database</Value>
+    </Setting>
+    <Setting Name="RemoteStreamingUrl" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">http://www.termorslive.net16.net/database/stream.m3u8</Value>
+    </Setting>
+    <Setting Name="FtpConcurrentJobs" Type="System.UInt16" Scope="User">
+      <Value Profile="(Default)">2</Value>
+    </Setting>
+    <Setting Name="VideoBitrateKbps" Type="System.UInt16" Scope="User">
+      <Value Profile="(Default)">400</Value>
+    </Setting>
+    <Setting Name="AudioBitrateKbps" Type="System.UInt16" Scope="User">
+      <Value Profile="(Default)">48</Value>
+    </Setting>
+    <Setting Name="VideoSize" Type="System.String" Scope="User">
+      <Value Profile="(Default)">360x288</Value>
+    </Setting>
+    <Setting Name="SegmentFileLengthSec" Type="System.UInt16" Scope="User">
+      <Value Profile="(Default)">20</Value>
+    </Setting>
+    <Setting Name="SegmentCount" Type="System.UInt16" Scope="User">
+      <Value Profile="(Default)">60</Value>
+    </Setting>
+    <Setting Name="VideoMaxBitrateKbps" Type="System.UInt16" Scope="User">
+      <Value Profile="(Default)">600</Value>
+    </Setting>
+    <Setting Name="TwitterConsumerKey" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">dlImhT0hAeM1BAxrqUg6w</Value>
+    </Setting>
+    <Setting Name="TwitterConsumerSecret" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">nmlWqhppzhwUjATiD8b3OnRiBIwZqZNF8yGCJhGRj9s</Value>
+    </Setting>
+    <Setting Name="TwitterAccessToken" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">1352280254-bbffWme573aj8pkWgukoIEwuY088GTvTCNbi6Ec</Value>
+    </Setting>
+    <Setting Name="TwitterAccessTokenSecret" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">d06Gu2YNXtP3ZDieV8SRKYCwCiCkdzTLgKvuExBk4SA</Value>
+    </Setting>
+    <Setting Name="ChannelGroup" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">SD Channels</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>
